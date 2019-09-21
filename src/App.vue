@@ -3,7 +3,7 @@
     <section class="container">
       <h1>Main</h1>
     </section>
-    <Todos names="names"/>
+    <Todos v-bind:todos="todo_data"/>
     
   </section>
 </template>
