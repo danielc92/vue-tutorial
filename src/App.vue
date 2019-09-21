@@ -1,17 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <section id="app">
+    <section class="container">
+      <h1>Main</h1>
+    </section>
+    <Todos names="names"/>
+    
+  </section>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Todos from './components/Todos.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Todos
+  },
+  data() {
+    return {
+      todo_data: [
+        { task: 'Laundry', by: 'Jeremy'} , 
+        { task: 'Eating', by: 'Daniel'},
+        { task: 'Exercise', by: 'Hannah'}
+      ]
+    }
   }
 }
 </script>
@@ -24,5 +36,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.container {
+  padding: 0 3rem;
 }
 </style>
