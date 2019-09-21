@@ -1,8 +1,6 @@
 <template>
-  <section id="app">
-    <section class="container">
-      <h1>Main</h1>
-    </section>
+  <section id="app" class="container">
+    <h1>Main App</h1>
     <Todos v-bind:todos="todo_data"/>
     
   </section>
@@ -33,12 +31,11 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
 
 .container {
-  padding: 0 3rem;
+  padding: 0 5rem;
 }
 </style>
