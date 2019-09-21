@@ -16,12 +16,11 @@ export default {
   },
   data() {
     return {
-      todo_data: [
-        { task: 'Laundry', by: 'Jeremy'} , 
-        { task: 'Eating', by: 'Daniel'},
-        { task: 'Exercise', by: 'Hannah'}
-      ]
+      todo_data: []
     }
+  },
+  mounted () {
+    this.todo_data = [{"task":"aksujdhaskuf"}]
   }
 }
 </script>

@@ -14,11 +14,11 @@ export default {
 
 <style scoped>
     .todo-box {
-        background: red;
+        background: orangered;
         color: white;
         border: none;
         border-radius: 2px;
         margin-bottom: 1rem;
-        padding: .4rem .3rem;
+        padding: .4rem 1rem;
     }
 </style>
