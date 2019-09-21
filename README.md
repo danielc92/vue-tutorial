@@ -2,6 +2,9 @@
 
 ## Project setup
 ```
+# Install vue cli globally
+npm install -g @vue/cli
+# Install dependencies for this project
 yarn install
 ```
 
