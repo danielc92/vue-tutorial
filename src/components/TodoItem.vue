@@ -4,7 +4,7 @@
         <p class="todo-para">Ad id laboisi deserunt qui ure et. Cillum nostrud velit commodo consectetur adipisicing irure consequat consectetur ipsum aliquip velit reprehenderit ipsum voluptate. Commodo fugiat id incididunt labore laborum sunt velit amet tempor voluptate.</p>
         <p>{{ todo.task }}</p>
         <p class="userid-para">Created by user with id {{ todo.userId }}.</p>
-
+        <p v-if="!todo.completed" class="todo-reminder"><strong>alert!</strong> You may need to work on this task soon...</p>
         <p 
         class='status-tag'
         v-bind:class="[ todo.completed ? 'complete' : 'incomplete']">
@@ -20,7 +20,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+    :root {
+        --danger: rgb(212, 146, 22);
+    }
     .todo-box {
         margin: 0rem auto 1.2rem auto;
         max-width: 700px;
@@ -61,5 +64,12 @@ export default {
     }
     .complete {
         background: rgba(65, 192, 72, 1);
+    }
+
+    .todo-reminder {
+        padding: 1rem;
+        background: white;
+        color: var(--danger);
+        border: 1px dotted var(--danger);
     }
 </style>
