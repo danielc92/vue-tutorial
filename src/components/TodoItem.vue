@@ -87,6 +87,7 @@ export default {
         border-radius: 5px;
         color: red;
         border: .1rem solid red;
-        background-color: rgba(255,0,0,.1);
+        background-color: rgba(255,0,0,.03);
+        font-size: .8rem;
     }
 </style>
